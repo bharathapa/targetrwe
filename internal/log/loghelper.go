@@ -17,13 +17,13 @@ func InitializeLoggers() {
 	Error = log.New(os.Stdout, "ERROR", log.Ldate|log.Ltime|log.Lmicroseconds)
 }
 
-func WriteDebugLog(msg string) {
+func DebugLog(msg string) {
 	Debug.Println(msg)
 }
-func WriteInfoLog(msg string) {
+func InfoLog(msg string) {
 	Info.Println(msg)
 }
 
-func WriteErrorLog(msg string) {
+func ErrorLog(msg string) {
 	Error.Println(msg)
 }

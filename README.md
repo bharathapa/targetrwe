@@ -40,74 +40,73 @@ make run
 ```
 
 The above command will run the application
-## Endpoints
 
+## Endpoints
 Use postman or similar tool to call the API
 
-1. http:\\localhost:8080/ , GET
-2. http:\\localhost:8080/persons , GET 
+## GET Requests
 
-Endpoint 1,2 serve the same purpose, i.e. will list all the persons
+### 1. Get all persons.
+###       Request URL:
+            ```
+            Request URL: http:\\localhost:8080/
+            Request URL: http:\\localhost:8080/persons
+            ```
 
-http:\\localhost:8080/person, method POST to create new persons
+### 2. Get person by id.
+###       Request URL:
+            ```
+            Request URL: http:\\localhost:8080/persons/{id}, method GET to get persons by ID
+            ```
 
-```
-{
-        "id": 1,
-        "userid": 10000,
-        "firstname": "John",
-        "lennon": "Lenon",
-        "address": "111 ABC Way, Dallas, TX"
-    }
-```
- http:\\localhost:8080/person, method POST to create new person
-
-```
-{
-        "id": 1,
-        "userid": 10000,
-        "firstname": "John",
-        "lennon": "Lenon",
-        "address": "111 ABC Way, Dallas, TX"
-    }
-```
-
-http:\\localhost:8080/persons/{ID}, method DELETE to delete person
+### 3. Get person by userid.
+        ```
+        Request URL: http:\\localhost:8080/persons/user/{id}, method GET to get person by user ID
+        ```
 
 
-http:\\localhost:8080/persons, method PUT to update person
+## POST Requests
 
-```
-{
-        "id": 1,
-        "userid": 10000,
-        "firstname": "John",
-        "lennon": "Lenon",
-        "address": "111 ABC Way, Dallas, TX"
-    }
-```
-
-http:\\localhost:8080/person, method POST to create new person
-
-```
-{
-        "id": 1,
-        "userid": 10000,
-        "firstname": "John",
-        "lennon": "Lenon",
-        "address": "111 ABC Way, Dallas, TX"
-    }
-```
-
-http:\\localhost:8080/persons/{id}, method GET to get persons by ID
-
-http:\\localhost:8080/persons/user/{id}, method GET to get person by user ID
+### 1. Create new person.
+###       Request URL:
+            ```
+            http:\\localhost:8080/person, method POST to create new persons
+            ```
+###       Body:
+            ```
+            {
+                    "id": 1,
+                    "userid": 10000,
+                    "firstname": "John",
+                    "lennon": "Lenon",
+                    "address": "111 ABC Way, Dallas, TX"
+                }
+            ```
 
 
-myRouter.HandleFunc("/", getAllPerson).Methods(constants.GET)
-myRouter.HandleFunc("/persons", getAllPerson).Methods(constants.GET)
-myRouter.HandleFunc("/persons/{id}", getPersonById).Methods(constants.GET)
-myRouter.HandleFunc("/persons/user/{id}", getPersonByUserId)
-myRouter.HandleFunc("/person", createPerson).Methods(constants.POST)
-myRouter.HandleFunc("/persons", updatePerson).Methods(constants.PUT)
-myRouter.HandleFunc("/persons/{id}", delete).Methods(constants.DELETE)
+## PUT Requests
+
+### 1. Update person details.
+###       Request URL:
+            ```
+            http:\\localhost:8080/persons
+            ```
+###       Body:
+            ```
+            {
+                    "id": 1,
+                    "userid": 10000,
+                    "firstname": "George",
+                    "lennon": "Washington",
+                    "address": "222 BBC Way, Miami, FL"
+                }
+            ```
+
+
+## DELETE Requests
+
+### 1. Update person details.
+###       Request URL:
+            ```
+            http:\\localhost:8080/persons/{ID}
+            ```

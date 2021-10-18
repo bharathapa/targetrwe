@@ -5,9 +5,9 @@ import (
 	logMsg "person/internal/log"
 )
 
-// This application
+// This api basically performs CRUD operation
 func main() {
-	logMsg.WriteInfoLog("starting application.")
+	logMsg.InfoLog("starting application.")
 	handlers.HandleRequests()
-	logMsg.WriteInfoLog("ending application.")
+	logMsg.InfoLog("ending application.")
 }
