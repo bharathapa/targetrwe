@@ -49,20 +49,21 @@ Use postman or similar tool to call the API
 ### 1. Get all persons.
 ###       Request URL:
             ```
-            Request URL: http:\\localhost:8080/
-            Request URL: http:\\localhost:8080/persons
+            http:\\localhost:8080/
+            http:\\localhost:8080/persons
             ```
 
 ### 2. Get person by id.
 ###       Request URL:
             ```
-            Request URL: http:\\localhost:8080/persons/{id}, method GET to get persons by ID
+            http:\\localhost:8080/persons/{id}, method GET to get persons by ID
             ```
 
 ### 3. Get person by userid.
-        ```
-        Request URL: http:\\localhost:8080/persons/user/{id}, method GET to get person by user ID
-        ```
+###       Request URL:
+            ```
+            http:\\localhost:8080/persons/user/{id}, method GET to get person by user ID
+            ```
 
 
 ## POST Requests
