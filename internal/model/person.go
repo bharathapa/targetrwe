@@ -1,5 +1,6 @@
 package model
 
+//person details
 type Person struct {
 	UserID    int    `json:"userid"`
 	Id        int    `json:"id"`
