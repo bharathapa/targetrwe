@@ -48,66 +48,66 @@ Use postman or similar tool to call the API
 
 ### 1. Get all persons.
 ###       Request URL:
-            ```
-            http:\\localhost:8080/
-            http:\\localhost:8080/persons
-            ```
+```
+http:\\localhost:8080/
+http:\\localhost:8080/persons
+```
 
 ### 2. Get person by id.
 ###       Request URL:
-            ```
-            http:\\localhost:8080/persons/{id}, method GET to get persons by ID
-            ```
+```
+http:\\localhost:8080/persons/{id}, method GET to get persons by ID
+```
 
 ### 3. Get person by userid.
 ###       Request URL:
-            ```
-            http:\\localhost:8080/persons/user/{id}, method GET to get person by user ID
-            ```
+```
+http:\\localhost:8080/persons/user/{id}, method GET to get person by user ID
+```
 
 
 ## POST Requests
 
 ### 1. Create new person.
 ###       Request URL:
-            ```
-            http:\\localhost:8080/person, method POST to create new persons
-            ```
+```
+http:\\localhost:8080/person, method POST to create new persons
+```
 ###       Body:
-            ```
-            {
-                    "id": 1,
-                    "userid": 10000,
-                    "firstname": "John",
-                    "lennon": "Lenon",
-                    "address": "111 ABC Way, Dallas, TX"
-                }
-            ```
+```
+{
+        "id": 1,
+        "userid": 10000,
+        "firstname": "John",
+        "lennon": "Lenon",
+        "address": "111 ABC Way, Dallas, TX"
+    }
+```
 
 
 ## PUT Requests
 
 ### 1. Update person details.
 ###       Request URL:
-            ```
-            http:\\localhost:8080/persons
-            ```
+```
+http:\\localhost:8080/persons
+```
 ###       Body:
-            ```
-            {
-                    "id": 1,
-                    "userid": 10000,
-                    "firstname": "George",
-                    "lennon": "Washington",
-                    "address": "222 BBC Way, Miami, FL"
-                }
-            ```
+```
+{
+        "id": 1,
+        "userid": 10000,
+        "firstname": "George",
+        "lennon": "Washington",
+        "address": "222 BBC Way, Miami, FL"
+    }
+```
 
 
 ## DELETE Requests
 
 ### 1. Update person details.
 ###       Request URL:
-            ```
-            http:\\localhost:8080/persons/{ID}
-            ```
+```
+http:\\localhost:8080/persons/{ID}
+```
