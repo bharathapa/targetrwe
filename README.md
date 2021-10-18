@@ -56,13 +56,13 @@ http:\\localhost:8080/persons
 ### 2. Get person by id.
 ###       Request URL:
 ```
-http:\\localhost:8080/persons/{id}, method GET to get persons by ID
+http:\\localhost:8080/persons/{id}
 ```
 
 ### 3. Get person by userid.
 ###       Request URL:
 ```
-http:\\localhost:8080/persons/user/{id}, method GET to get person by user ID
+http:\\localhost:8080/persons/user/{id}
 ```
 
 
@@ -71,7 +71,7 @@ http:\\localhost:8080/persons/user/{id}, method GET to get person by user ID
 ### 1. Create new person.
 ###       Request URL:
 ```
-http:\\localhost:8080/person, method POST to create new persons
+http:\\localhost:8080/person
 ```
 ###       Body:
 ```
