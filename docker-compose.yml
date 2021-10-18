@@ -1,0 +1,22 @@
+version: '3.3'
+services:
+  localdatabase:
+    image: postgres
+    restart: always
+    volumes:
+      - .docker/database:/docker-entrypont-initdb.d
+    environment:
+      - POSTGRES_USER: postgres
+      - POSTGRES_PASSWORD: postgres
+      - POSTGRES_DB: root
+    ports:
+    - 5445:5445
+
+
+
+      docker run -p 5445:5445 -d \
+      -e POSTGRES_PASSWORD=postgres \
+      -e POSTGRES_USER=postgres \
+      -e POSTGRES_DB=targetrwe \
+      -v pgdata:/var/lib/postgresql/data \
+      postgres
